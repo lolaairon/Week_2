@@ -37,13 +37,17 @@ calcularEdad(){
 RETO 4 
 Añadir un método que se denomine printAll que muestre por consola cada uno de los
 atributos de la clase Person seguido por “-” y el valor del atributo.
-*/ 
+*/ /*
 printAll(){
     let count = ''
     for(let valores in Persona){
        count = count + valores + '-' + Persona[valores] + ' ';
     }
    return count
+}*/
+
+printAll(){
+    console.log(' nombre '+ '-' + this.nombre + ' edad ' + '-' + this.edad + ' altura ' + '-' + this.altura + ' peso ' + '-' + this.peso + ' nacimiento ' + '-' + this.nacimiento +' hobbies ' + '-' + this.hobbies)
 }
 
 /*RETO 5
@@ -57,12 +61,12 @@ printHobbies(){
 
 }//CIERRE DE LA CLASE 
  //MAIN 
-/*
+
  let persona = new Persona('Pepe',20,165,56,1993,['pescar','correr', 'nadar']);
 console.log(persona);
  console.log(persona.calcularIMC())
  console.log(persona.calcularEdad())
- console.log(persona.printAll())
-console.log(persona.printHobbies());*/
+ persona.printAll()
+console.log(persona.printHobbies());
 
  module.exports.Persona = Persona ;

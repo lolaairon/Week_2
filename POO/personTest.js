@@ -12,7 +12,7 @@ let persona1 = new Persona('Lucas',25,195,80,1986,['correr','boxeo', 'judo']);
 console.log(persona1);
 console.log(persona1.calcularIMC())
 console.log(persona1.calcularEdad())
-console.log(persona1.printAll())
+persona1.printAll()
 console.log(persona1.printHobbies());
 
 
