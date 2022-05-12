@@ -1,0 +1,11 @@
+"use strict";
+exports.__esModule = true;
+var reto1_1 = require("./reto1");
+var contacts_1 = require("./contacts");
+var perso0 = new reto1_1.PerssoNa('Pepa', 15, 'Calle la Praga');
+var perso2 = new reto1_1.PerssoNa('Pepe', 5, 'Calle la Grappa');
+var perso3 = new reto1_1.PerssoNa('Cuca', 5, 'Calle la Pampa');
+var con = new contacts_1.Contacts;
+con.people.push(perso0, perso2, perso3);
+con.printCalendar();
+console.log(con.people);

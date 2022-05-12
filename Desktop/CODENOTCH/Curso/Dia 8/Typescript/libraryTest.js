@@ -1,0 +1,12 @@
+"use strict";
+exports.__esModule = true;
+var reto6_1 = require("./reto6");
+var reto4_1 = require("./reto4");
+var book9 = new reto4_1.Book('El día que se perdió la cordura', 350, '978-84-663-4612-2', 'Castillo, Javier', 'DeBolsillo');
+var book10 = new reto4_1.Book('El día que se perdió el amor', 320, '978-22-663-3333-2', 'Castillo, Javier', 'DeBolsillo');
+var book11 = new reto4_1.Book('La chica de nieve', 250, '666-88-663-4612-2', 'Castillo, Javier', 'DeBolsillo');
+var librosE = [book9, book10, book11];
+var libreria = new reto6_1.Library(librosE, 'Alcobendas', 'Pepa');
+console.log(libreria.toString());
+console.log(libreria.getNumberOfBooks());
+console.log(libreria.findByAuthor('Castillo, Javier'));
