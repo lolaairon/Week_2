@@ -1,0 +1,12 @@
+"use strict";
+exports.__esModule = true;
+var reto8_1 = require("./reto8");
+var vector1 = new reto8_1.Vector(5, 20);
+var v1 = new reto8_1.Vector(5, 20);
+var v2 = new reto8_1.Vector(9, 100);
+v1.getprint();
+vector1.getprint();
+console.log(vector1.add(v1));
+console.log(vector1.subs(v1));
+console.log(vector1.mult(v1));
+console.log(vector1.multNumer(2));
